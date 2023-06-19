@@ -1,0 +1,9 @@
+Deploy on xigxag-dev as an AppEngine
+
+We may change this to be an App Engine instance or a Cloud Run perhaps?
+Callable end points
+
+ppGetCover
+ppGetBookState
+ppGetPublisherCodes
+

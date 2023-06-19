@@ -1,0 +1,13 @@
+google-cloud-core==2.3.2
+protobuf==4.23.2
+firebase-admin==6.1.0
+Flask==2.3.2
+Flask-Cors==3.0.10
+google.cloud.storage==2.9.0
+grpcio==1.54.2
+google-auth==2.20.0
+google-resumable-media==2.5.0
+googleapis-common-protos
+slack-webhook==1.0.7
+loggly-python-handler==1.0.1
+Pillow==9.5.0

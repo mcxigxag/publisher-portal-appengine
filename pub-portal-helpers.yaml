@@ -1,0 +1,21 @@
+runtime: python39
+instance_class: F1
+# 1.3 G with 512 ram
+automatic_scaling:
+    min_idle_instances: 1
+
+service: portal-helpers
+
+handlers:
+  # This configures Google App Engine to serve the files in the app's static
+  # directory.
+- url: /static
+  static_dir: static
+  http_headers:
+    Access-Control-Allow-Origin: '*'
+
+  # This handler routes all requests not caught above to your main app. It is
+  # required when static routes are defined, but can be omitted (along with
+  # the entire handlers section) when there are no static files defined.
+- url: /.*
+  script: auto
